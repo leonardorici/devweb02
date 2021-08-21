@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        label{
+            font-size: 13px;
+            font-weight: bold;
+            color: rgb(0, 0, 0);
+            font-family: Noto Sans, sans-serif;
+            padding: 10px;
+            padding-right: 10px;
+            display: inline-block;
+            *display: inline;
+            padding-top: 5px;
+            text-align: right;
+            width: 140px;   
+        }
+        input{
+            font-size: 12px;
+            margin-top: 4px;
+            margin-bottom: 4px;
+            display: inline-block;
+            *display: inline;
+            vertical-align: middle;
+            margin-left: 5px;
+            border-radius: 3px;
+            border-width: 1px;
+            border-color: rgb(0, 0, 0);
+        }
+
+        input[type=submit] {
+            width: 160px;
+            color: white;
+            background-color: rgb(10, 99, 69);
+            border-color: rgb(24, 34, 3);
+            font-weight: bold;
+            font-family: Noto Sans, sans-serif;
+        }
+
+        input[value="Cancelar"] {
+            width: 160px;
+            color: darkred;
+            font-size: 8px;
+            border-color: none;
+            font-weight: bold;
+        }
+
+        .caixa{
+            padding: 100px;
+            padding-left: 20px;
+            padding-top: 50px;
+            background-color: rgba(179, 174, 174, 0.918);
+            display: inline-block;
+            *display: inline;
+            font-size: 18px;
+            font-family: Noto Sans, sans-serif;
+            
+        }
+
+    </style>
+</head>
+<body bgcolor="000000">
+    <div class="caixa">
+        <h1>Preencha o formulário</h1>
+        <form method="POST" action="formulario.php">
+            <label for='Nome'> Nome</label> <input type="text" placeholder="Digite seu nome..." name="Nome"> <br>
+            <label for='Sobrenome'> Sobrenome</label> <input type="text" placeholder="Digite seu sobrenome..." name="Sobrenome"> <br>
+            <label for='Email'> Email</label> <input type="phone" placeholder="Digite seu email..." name="Email"> <br>
+            <label for="Telefone"> Telefone</label> <input type="phone" placeholder="Digite seu telefone..." name="Telefone"> <br>
+            <label for="Mensagem"> Mensagem</label> <input type="textarea" placeholder="Digite a mensagem..." name="Mensagem"> <br>
+            <label></label>
+            <input type="submit" value="Enviar"> <br>
+            <label></label>
+            <input type="button" value="Cancelar"> <br>
+        </form>
+    </div>
+</body>
+</html>
